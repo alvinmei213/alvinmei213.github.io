@@ -1,11 +1,20 @@
+@use "./colors.scss";
+//noinspection CssUnknownTarget
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;900&display=swap');
+
 html, body, * {
   box-sizing: border-box;
   font-size: 10px;
   padding: 0;
   margin: 0;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   line-height: 1.6;
   text-rendering: optimizeLegibility;
+  font-family: "Noto Sans", sans-serif;
+  color: var(--white);
+  background-color: var(--gray);
 }
